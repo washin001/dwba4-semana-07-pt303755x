@@ -1,96 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!-- configura a codificação de caracteres do navegador para o UTF-8-->
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <!-- Adiciona o ícone de aba de navegador-->
-    <link rel="stylesheet" href="css/conteudo.css">
-    <!--link rel="stylesheet" href="css/menulateral.css"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME - IFSP - Pirituba</title>
-    <!-- Adiciona o título na aba do navegador-->
-
-    <!--script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-</script-->
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/disabling.js"></script>
-
 </head>
-
 <body>
 
-    <header id="cabecalho">
-        <!-- Indica o cabeçalho do nosso documento-->
-
-        <nav>
-            <object width="100%" height="200px" data="menu.html"></object>
-        </nav>
-
+    <header>
+        <object width="100%" height="220px" data="menu.html"></object>
     </header>
 
-    <main id="conteudo">
-        <!-- indica que é o conteúdo principal dessa página -->
+    <main class="grid-container">
+        <article class="card">
+            <img src="img/eleicoes.jpg" alt="Eleições IFSP">
+            <h2>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</h2>
+            <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus.</p>
+        </article>
 
-        <!--nav>
+        <article class="card">
+            <img src="img/snct.jpg" alt="SNCT IFSP">
+            <h2>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h2>
+            <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais.</p>
+        </article>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="biblioteca.html">Biblioteca</a>
-    <a href="localizacao.html">Localização</a>    
-  </div>
+        <article class="card">
+            <img src="img/residencia.png" alt="Residência Pedagógica">
+        </article>
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-</nav-->
-
-
-        <aside>
-            <!-- indica que é um conteúdo a parte do princial, auxiliar-->
-            <h1>Acontece no IFSP!</h1>
-            <figure>
-                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
-                <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
-            </figure>
-        </aside>
-
-        <section>
-            <h1>
-                Conheça os desafios de inovação
-            </h1>
-            <div class="videoWrapper">
-                <p align="center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-            </div>
-        </section>
-
+        <article class="card">
+            <img src="img/maratona.jpeg" alt="InterIFS 2020">
+        </article>
     </main>
 
     <footer>
-        <br><br>
-        <object width="100%" height="200px" data="rodape.html"></object>
-
+        <object width="100%" height="160px" data="rodape.html"></object>
     </footer>
 
-    <!-- Adicionar scripts abaixo apenas para publicação no Firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
 </body>
-
 </html>
