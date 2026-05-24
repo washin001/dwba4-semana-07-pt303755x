@@ -1,46 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME - IFSP - Pirituba</title>
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/disabling.js"></script>
-</head>
-<body>
+    <div class="mySlides fade">
+        <img src="img/snct.jpg" style="width:100%">
+    </div>
 
-<header>
-    <object width="100%" height="220px" data="menu.html"></object>
-</header>
+    <div class="mySlides fade">
+        <img src="img/interif.jpg" style="width:100%">
+    </div>
 
-<main class="grid-container">
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
 
-    <article class="card">
-        <img src="Imagens/eleicoes.jpg" alt="Eleições IFSP">
-        <h2>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</h2>
-        <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus.</p>
+</div>
+
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<main>
+
+<section class="news-grid">
+
+    <article class="news-card">
+        <img src="img/eleicoes.jpg" alt="Eleições IFSP">
+        <h3>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</h3>
+        <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
     </article>
 
-    <article class="card">
-        <img src="Imagens/snct.jpg" alt="SNCT IFSP">
-        <h2>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h2>
-        <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais.</p>
+    <article class="news-card">
+        <img src="img/snct.jpg" alt="SNCT">
+        <h3>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h3>
+        <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
     </article>
 
-    <article class="card">
-        <img src="Imagens/residencia.png" alt="Residência Pedagógica">
+    <article class="news-card">
+        <img src="img/residencia.jpg" alt="Residência Pedagógica">
+        <h3>IFSP oferece bolsa aos voluntários da Residência Pedagógica</h3>
+        <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
     </article>
 
-    <article class="card">
-        <img src="Imagens/maratona.jpeg" alt="InterIFS 2020">
+    <article class="news-card">
+        <img src="img/interif.jpg" alt="INTERIFS">
+        <h3>Inscrições abertas para a III Maratona InterIF</h3>
+        <p>Maratona de programação do IFSP será realizada online</p>
     </article>
+
+</section>
+
+<section class="video-section">
+    <h2>Conheça os desafios de inovação</h2>
+
+    <iframe width="700" height="400"
+        src="https://www.youtube.com/embed/yVbOcB1ryh0"
+        allowfullscreen>
+    </iframe>
+</section>
 
 </main>
 
 <footer>
-    <object width="100%" height="160px" data="rodape.html"></object>
+    <img src="img/facebook.png" width="40">
+    <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </p>
 </footer>
+
+<script src="js/slideshow.js"></script>
 
 </body>
 </html>
