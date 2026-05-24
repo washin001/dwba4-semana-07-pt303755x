@@ -52,6 +52,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -113,6 +114,7 @@ footer {
 }
 
 @keyframes fade {
+
     from {
         opacity: .4;
     }
@@ -120,4 +122,5 @@ footer {
     to {
         opacity: 1;
     }
+
 }
